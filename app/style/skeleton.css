@@ -1,0 +1,48 @@
+.timer div span {
+    color: #ffffff;
+    display: block;
+    margin-top: 15px;
+    font-size: .35em;
+    font-weight: 400;
+}
+
+body {
+    text-align: center;
+    background: #98C1D9;
+    padding-top: 15%;
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: #ffff;
+    padding: 20px;
+}
+
+.timer div {
+    display: inline-block;
+    flex: auto;
+    min-width: 90px;
+    width: auto;
+    padding: 15px;
+    background: #293241;
+    border-radius: 10px;
+    border: 2px solid #293241;
+    margin: 15px;
+    box-shadow: 5px 3px 3px rgb(24, 1, 1);
+}
+
+.title {
+    font-size: 24px;
+    font-style: normal;
+    text-align: center;
+    text-rendering: geometricPrecision;
+}
+
+footer {
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}

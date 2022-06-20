@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  wwte:
+    image: ghcr.io/bapt0u/whenwillthisend:main
+    container_name: wwte
+    hostname: wwte
+    restart: unless-stopped
+    networks:
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.wwte.rule=Host(`combiendetemps.${DOMAIN}`)
+      - traefik.http.routers.wwte.tls.certresolver=lets-encrypt
+
+networks:
+  proxy:
+    external: true
